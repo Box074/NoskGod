@@ -1,0 +1,104 @@
+{
+    "modName": "NoskGod",
+    "modVersion": "0.0.0.0",
+    "codeDir": "./scripts",
+    "csCompileInfo": true,
+    "testMode": true,
+    "hktool": {
+        "referenceLib": true,
+        "compressResources": true,
+        "modifyIL": true,
+        "externRes": true,
+        "modRes": {
+            "nosk.void": {
+                "name": "NOSK_VOID_TEX",
+                "type": "tex"
+            },
+            "vomit.void": {
+                "name": "VOMIT_VOID_TEX",
+                "type": "tex"
+            },
+            "ground01": {
+                "name": "GROUND_01",
+                "type": "tex",
+                "sprites": [
+                    {
+                        "name": "SPRITE_GROUND_01",
+                        "uv": [
+                            0,
+                            0,
+                            1,
+                            1
+                        ]
+                    }
+                ]
+            },
+            "vessel_01_set": {
+                "name": "BG_01",
+                "type": "tex",
+                "sprites": [
+                    {
+                        "name": "SPRITE_BG_01",
+                        "uv": [
+                            0,
+                            0,
+                            1,
+                            1
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "enableNullableCheck": true,
+    "resources": {
+        "./res/void-nosk.png": "nosk.void",
+        "./res/skull_corpses_layered_0003_1.png": "vessel_01",
+        "./res/skull_corpses_layered_0003_1_set.png": "vessel_01_set",
+        "./res/skull_corpses_layered_0002_2.png": "vessel_02",
+        "./res/skull_corpses_layered_0001_3.png": "vessel_03",
+        "./res/_0201_abyss.png": "ground01",
+        "./res/void-vomit.png": "vomit.void"
+    },
+    "dependencies": [
+        {
+            "name": "Modding API",
+            "url": "https://github.com/hk-modding/api/releases/latest/download/ModdingApiWin.zip",
+            "ignoreFiles": [
+                "MMHOOK_PlayMaker.dll",
+                "Mono.Cecil.dll",
+                "MonoMod.RuntimeDetour.dll",
+                "MonoMod.Utils.dll"
+            ],
+            "copyToOutput": false
+        },
+        {
+            "name": "Vanilla",
+            "url": "https://files.catbox.moe/i4sdl6.zip",
+            "ignoreFiles": [
+                "Assembly-CSharp.dll",
+                "mscorlib.dll",
+                "Newtonsoft.Json.dll"
+            ],
+            "copyToOutput": false
+        },
+        {
+            "name": "HKTool",
+            "url": "https://github.com/HKLab/HollowKnightMod.Tool/releases/latest/download/Output.zip"
+        }
+    ],
+    "csproj": {
+        "itemGroup": {
+            "name": "ItemGroup",
+            "content": [],
+            "attr": {}
+        },
+        "propertyGroup": {
+            "name": "PropertyGroup",
+            "content": [],
+            "attr": {}
+        }
+    },
+    "bindingLogger": [],
+    "$schema": "https://github.com/HKLab/hkmod-utils/raw/master/schemca/modProject.json"
+}
