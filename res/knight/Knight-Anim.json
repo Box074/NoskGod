@@ -1,0 +1,6646 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 834
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 1930
+  },
+  "m_Name": "",
+  "clips": [
+    {
+      "name": "Idle",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 7,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 2,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 8,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 0,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 6,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 4,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 3,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 1,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 5,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 12.0,
+      "loopStart": 0,
+      "wrapMode": 0
+    },
+    {
+      "name": "Dash",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 39,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 35,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 38,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 36,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 37,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 34,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 18.0,
+      "loopStart": 0,
+      "wrapMode": 0
+    },
+    {
+      "name": "Airborne",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 22,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 17,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 19,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 21,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 20,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 18,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 23,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 26,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 27,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 24,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 25,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 28,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 16.0,
+      "loopStart": 9,
+      "wrapMode": 1
+    },
+    {
+      "name": "SlashAlt",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 40,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 43,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 50,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 52,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 52,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 20.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "Run",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 32,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 31,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 30,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 33,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 29,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 14,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 10,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 15,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 16,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 9,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 11,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 13,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 12,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 12.0,
+      "loopStart": 6,
+      "wrapMode": 1
+    },
+    {
+      "name": "Slash",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 55,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 42,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 47,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 49,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 49,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 20.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "SlashEffect",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 44,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 45,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 51,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 51,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 46,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 46,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 40.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "SlashEffectAlt",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 53,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 41,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 54,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 54,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 48,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 48,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 40.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "UpSlash",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 81,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 86,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 83,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 82,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 82,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 20.0,
+      "loopStart": 0,
+      "wrapMode": 0
+    },
+    {
+      "name": "DownSlash",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 100,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 99,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 98,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 97,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 97,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 20.0,
+      "loopStart": 0,
+      "wrapMode": 0
+    },
+    {
+      "name": "Land",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 75,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 73,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 74,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 12.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "HardLand",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 78,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 77,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 79,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 79,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 80,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 76,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 10.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "LookDown",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 69,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 67,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 72,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 70,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 68,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 71,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 12.0,
+      "loopStart": 1,
+      "wrapMode": 1
+    },
+    {
+      "name": "LookUp",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 63,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 65,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 61,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 66,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 64,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 62,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 12.0,
+      "loopStart": 1,
+      "wrapMode": 1
+    },
+    {
+      "name": "UpSlashEffect",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 95,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 96,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 85,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 85,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 84,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 84,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 40.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "DownSlashEffect",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 107,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 110,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 108,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 108,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 109,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 109,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 40.0,
+      "loopStart": 1,
+      "wrapMode": 2
+    },
+    {
+      "name": "Death",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 87,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 105,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 103,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 93,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 102,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 92,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 106,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 106,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 89,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 89,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 101,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 101,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 90,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 90,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 94,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 94,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 91,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 91,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 10.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "Back Dash",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 148,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 147,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 146,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 149,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 18.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "Death Head Normal",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 111,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 30.0,
+      "loopStart": 0,
+      "wrapMode": 6
+    },
+    {
+      "name": "Death Head Cracked",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 112,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 30.0,
+      "loopStart": 0,
+      "wrapMode": 6
+    },
+    {
+      "name": "Recoil",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 60,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 60,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 56,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 56,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 57,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 59,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 58,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 58,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 24.242424,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "Fireball",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 125,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 129,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 126,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 124,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 131,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 127,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 123,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 130,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 128,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 132,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 20.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "Dash Puff",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 135,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 136,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 138,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 137,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 140,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 139,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 133,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 134,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 20.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "Acid Death",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 135,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 136,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 137,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 133,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 134,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 138,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 12.0,
+      "loopStart": 2,
+      "wrapMode": 1
+    },
+    {
+      "name": "Spike Death",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 139,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 143,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 140,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 145,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 141,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 142,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 144,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 499,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 500,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 501,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 502,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 503,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 504,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 505,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 506,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 507,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 508,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 15.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "Hit Crack Appear",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 155,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 151,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 156,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 153,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 152,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 150,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 30.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "Fireball Failure",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 157,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 160,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 161,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 158,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 159,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 20.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "Collect Magical 1",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 164,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 171,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 170,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 163,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 162,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 172,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 12.0,
+      "loopStart": 0,
+      "wrapMode": 0
+    },
+    {
+      "name": "Collect Magical 2",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 357,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 298,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 384,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 367,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 383,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 364,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 300,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 301,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 370,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 366,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 369,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 12.0,
+      "loopStart": 4,
+      "wrapMode": 1
+    },
+    {
+      "name": "Collect Magical 3",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 387,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 378,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 373,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 371,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 372,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 365,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 368,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 358,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 381,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 12.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "Collect Normal 1",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 195,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 191,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 196,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 199,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 198,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 194,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 185,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 205,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 12.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "Collect Normal 2",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 193,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 188,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 200,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 180,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 12.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "Collect Normal 3",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 186,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 183,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 192,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 189,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 187,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 12.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "Dream Enter",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 206,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 209,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 208,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 211,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 210,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 207,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 12.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "Backdash Land 1",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 240,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 243,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 238,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 20.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "Idle Wind",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 245,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 249,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 248,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 247,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 246,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 12.0,
+      "loopStart": 0,
+      "wrapMode": 0
+    },
+    {
+      "name": "Enter",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 257,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 252,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 255,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 258,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 254,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 251,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 250,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 259,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 256,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 253,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 12.0,
+      "loopStart": 3,
+      "wrapMode": 1
+    },
+    {
+      "name": "Roar Lock",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 287,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 280,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 282,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 285,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 281,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 283,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 12.0,
+      "loopStart": 3,
+      "wrapMode": 1
+    },
+    {
+      "name": "Sit",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 291,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 292,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 288,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 10.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "Sit Lean",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 296,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 293,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 294,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 12.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "Dream Land",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 278,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 275,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 276,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 273,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 271,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 269,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 270,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 272,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 267,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 268,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 277,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 274,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 279,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 266,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 12.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "Wake",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 330,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 331,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 328,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 327,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 327,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 327,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 327,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 327,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 327,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 290,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 289,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 75,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 73,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 74,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 12.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "Get Off",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 290,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 289,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 75,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 73,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 74,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 12.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "Sitting Asleep",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 329,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 30.0,
+      "loopStart": 0,
+      "wrapMode": 6
+    },
+    {
+      "name": "Prostrate",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 343,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 30.0,
+      "loopStart": 0,
+      "wrapMode": 6
+    },
+    {
+      "name": "Prostrate Rise",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 348,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 337,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 350,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 338,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 334,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 341,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 349,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 342,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 340,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 340,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 340,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 340,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 333,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 347,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 351,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 335,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 344,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 332,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 336,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 345,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 339,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 12.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "Stun",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 60,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 1.0,
+      "loopStart": 0,
+      "wrapMode": 0
+    },
+    {
+      "name": "Turn",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 326,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 325,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 20.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "Run To Idle",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 391,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 388,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 389,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 390,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 18.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "Focus",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 464,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 453,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 456,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 461,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 455,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 462,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 459,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 12.0,
+      "loopStart": 2,
+      "wrapMode": 1
+    },
+    {
+      "name": "Focus Get",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 458,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 458,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 454,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 457,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 463,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 460,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 456,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 461,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 455,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 462,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 459,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 12.0,
+      "loopStart": 6,
+      "wrapMode": 1
+    },
+    {
+      "name": "Focus End",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 238,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 241,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 242,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 239,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 12.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "Wake Up Ground",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 343,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 343,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 343,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 343,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 343,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 343,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 343,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 343,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 343,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 343,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 343,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 343,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 343,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 343,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 343,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 343,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 343,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 343,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 343,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 343,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 343,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 343,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 343,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 343,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 343,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 352,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 346,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 348,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 337,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 350,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 338,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 334,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 341,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 349,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 349,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 349,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 349,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 349,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 347,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 351,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 335,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 344,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 332,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 336,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 345,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 7,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 18.000004,
+      "loopStart": 32,
+      "wrapMode": 2
+    },
+    {
+      "name": "Focus Get Once",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 458,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 454,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 457,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 463,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 460,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 12.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "Hazard Respawn",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 349,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 349,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 349,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 349,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 349,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 349,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 349,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 349,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 349,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 349,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 349,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 349,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 347,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 351,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 335,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 344,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 332,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 336,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 345,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 7,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 16.0,
+      "loopStart": 32,
+      "wrapMode": 2
+    },
+    {
+      "name": "Walk",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 430,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 432,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 428,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 427,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 426,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 433,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 429,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 10.0,
+      "loopStart": 0,
+      "wrapMode": 0
+    },
+    {
+      "name": "Respawn Wake",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 329,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 329,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 329,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 329,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 329,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 329,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 329,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 329,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 329,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 329,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 330,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 331,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 328,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 327,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 12.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "Sit Fall Asleep",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 330,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 329,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 12.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "Map Idle",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 439,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 435,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 436,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 438,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 434,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 440,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 442,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 441,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 437,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 12.0,
+      "loopStart": 2,
+      "wrapMode": 1
+    },
+    {
+      "name": "Map Away",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 435,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 439,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 12.0,
+      "loopStart": 1,
+      "wrapMode": 2
+    },
+    {
+      "name": "Fall",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 23,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 26,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 27,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 24,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 25,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 28,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 12.0,
+      "loopStart": 3,
+      "wrapMode": 1
+    },
+    {
+      "name": "TurnToIdle",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 326,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 325,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 7,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 2,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 8,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 0,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 6,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 4,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 3,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 1,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 5,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 12.0,
+      "loopStart": 2,
+      "wrapMode": 1
+    },
+    {
+      "name": "Collect Magical Fall",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 374,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 359,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 362,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 380,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 386,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 12.0,
+      "loopStart": 2,
+      "wrapMode": 1
+    },
+    {
+      "name": "Collect Magical Land",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 302,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 363,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 12.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "LookUpEnd",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 65,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 63,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 20.0,
+      "loopStart": 1,
+      "wrapMode": 2
+    },
+    {
+      "name": "Idle Hurt",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 191,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 196,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 467,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 466,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 470,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 471,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 472,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 468,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 465,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 474,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 469,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 473,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 12.0,
+      "loopStart": 2,
+      "wrapMode": 1
+    },
+    {
+      "name": "LookDownEnd",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 67,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 69,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 20.0,
+      "loopStart": 1,
+      "wrapMode": 2
+    },
+    {
+      "name": "Collect Heart Piece",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 357,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 298,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 384,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 367,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 383,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 364,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 300,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 301,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 370,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 12.0,
+      "loopStart": 6,
+      "wrapMode": 1
+    },
+    {
+      "name": "Collect Heart Piece End",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 178,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 23,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 12.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "Fireball1 Cast",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 475,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 488,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 481,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 486,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 485,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 477,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 487,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 482,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 484,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 20.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "Fireball Antic",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 483,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 476,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 479,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 478,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 480,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 30.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "Backdash Land 2",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 241,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 242,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 239,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 20.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "Back Dash 2",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 496,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 494,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 495,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 493,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 18.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "Back Dash 3",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 148,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 491,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 491,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 490,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 492,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 489,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 15.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "Back Dash Pause",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 240,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 244,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 20.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    },
+    {
+      "name": "",
+      "frames": [],
+      "fps": 30.0,
+      "loopStart": 0,
+      "wrapMode": 0
+    },
+    {
+      "name": "Wake To Sit",
+      "frames": [
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 330,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 331,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 328,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 327,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 327,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 327,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 327,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 327,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        },
+        {
+          "spriteCollection": {
+            "m_FileID": 0,
+            "m_PathID": 1900
+          },
+          "spriteId": 327,
+          "triggerEvent": false,
+          "eventInfo": "",
+          "eventInt": 0,
+          "eventFloat": 0.0
+        }
+      ],
+      "fps": 12.0,
+      "loopStart": 0,
+      "wrapMode": 2
+    }
+  ]
+}

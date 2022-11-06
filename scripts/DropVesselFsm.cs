@@ -6,11 +6,26 @@ class DropVesselFsm : CSFsm<DropVesselFsm>
     [FsmVar]
     private FsmFloat RoofY = new();
     [FsmVar]
-    private FsmInt SpawnCount = new();
+    public FsmInt SpawnCount = new();
     [FsmVar]
-    private FsmInt FallType = new();
+    public FsmInt FallType = new();
     [FsmVar]
-    private FsmBool SpawnShade = new();
+    public FsmBool SpawnShade = new();
+    [FsmVar]
+    public FsmInt SpawnMaxCount = 4;
+    public bool returnSelf = false;
+    public List<GameObject> dropCorpses = new();
+    public void CleanUp(float minY)
+    {
+        foreach(var v in dropCorpses)
+        {
+            if(v == null) continue;
+            if(v.GetComponent<MeshRenderer>().bounds.max.y < minY)
+            {
+                Destroy(v);
+            }
+        }
+    }
     [FsmState]
     private IEnumerator Spawn()
     {
@@ -19,35 +34,13 @@ class DropVesselFsm : CSFsm<DropVesselFsm>
         var x = UnityEngine.Random.Range(74, 114);
         var drop = UnityEngine.Object.Instantiate(NoskGod.CorpseSpawn, new Vector3(x, RoofY.Value, 0.0038f), Quaternion.identity);
         drop.name = "Abyss Drop Corpse";
+        dropCorpses.Add(drop);
         if (SpawnShade.Value)
         {
             drop.LocateMyFSM("Control").Fsm.GetState("Land").AppendFsmStateAction<InvokeAction>(new(a =>
             {
-                if(UnityEngine.Random.value <= 0.9f  && UnityEngine.Object.FindObjectsOfType<GameObject>().Count(x => x.name == "Nosk Shade") > 8) return;
-                var sibling = UnityEngine.Object.Instantiate(NoskGod.Sibling);
-                sibling.transform.position = drop.transform.position;
-                sibling.name = "Nosk Shade";
-                UnityEngine.Object.Destroy(sibling.FindChild("Alert Range"));
-                var ctrl = sibling.LocateMyFSM("Control");
-                foreach (var v in ctrl.GetComponentsInChildren<Collider2D>()) v.isTrigger = true;
-                ctrl.Fsm.GetState("Friendly?").AppendFsmStateAction<InvokeAction>(new(() =>
-                {
-                    ctrl.Fsm.SetState("Init");
-                    ctrl.GetComponent<HealthManager>().hp = 12;
-                    
-                    FSMUtility.SetBool(ctrl, "Friendly", false);
-                }));
-                ctrl.Fsm.GetState("Recycle").AppendFsmStateAction<InvokeAction>(new(() =>
-                {
-                    UnityEngine.Object.Destroy(sibling);
-                }));
-                ctrl.Fsm.GetState("Idle").AppendFsmStateAction<InvokeAction>(new(() =>
-                {
-                    ctrl.Fsm.GetFsmBool("Alert Range").Value = true;
-                }));
-                UnityEngine.Object.Destroy(sibling.GetComponent<LimitBehaviour>());
-                FSMUtility.SetBool(ctrl, "No Spawn", false);
-                sibling.SetActive(true);
+                if((UnityEngine.Random.value >= 0.5f || NoskShade.GetShadeCount() > SpawnMaxCount.Value) && !returnSelf) return;
+                NoskShade.Spawn(drop.transform.position, dieTarget: returnSelf ? gameObject : null);
             }));
 
         }

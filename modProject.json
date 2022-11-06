@@ -4,11 +4,18 @@
     "codeDir": "./scripts",
     "csCompileInfo": true,
     "testMode": true,
+    "phaseInfo": {
+        "phase1": 3000,
+        "phase2": 2500,
+        "phase3": 2300,
+        "lastPhase": 2200,
+        "___": "//FIXME before releasing"
+    },
     "hktool": {
         "referenceLib": true,
         "compressResources": true,
         "modifyIL": true,
-        "externRes": true,
+        "externRes": false,
         "modRes": {
             "nosk.void": {
                 "name": "NOSK_VOID_TEX",
@@ -47,6 +54,18 @@
                         ]
                     }
                 ]
+            },
+            "knight.anim": {
+                "name": "KNIGHT_ANIM_TEXT",
+                "type": "utf8"
+            },
+            "knight.sprites": {
+                "name": "KNIGHT_SPRITES_TEXT",
+                "type": "utf8"
+            },
+            "knight.atlas": {
+                "name": "KNIGHT_ATLAS",
+                "type": "tex2d"
             }
         }
     },
@@ -58,7 +77,12 @@
         "./res/skull_corpses_layered_0002_2.png": "vessel_02",
         "./res/skull_corpses_layered_0001_3.png": "vessel_03",
         "./res/_0201_abyss.png": "ground01",
-        "./res/void-vomit.png": "vomit.void"
+        "./res/void-vomit.png": "vomit.void",
+        "./res/knight/Knight-Anim.json": "knight.anim",
+        "./res/knight/Knight-Sprites.json": "knight.sprites",
+        "./res/knight/knight-atlas.png": "knight.atlas",
+        "./res/lang/en.txt": "lang.en",
+        "./res/lang/zh.txt": "lang.zh"
     },
     "dependencies": [
         {
@@ -85,6 +109,10 @@
         {
             "name": "HKTool",
             "url": "https://github.com/HKLab/HollowKnightMod.Tool/releases/latest/download/Output.zip"
+        },
+        {
+            "name": "HKGS",
+            "url": "https://github.com/HKLab/HK.Graphics/releases/latest/download/Output.zip"
         }
     ],
     "csproj": {
