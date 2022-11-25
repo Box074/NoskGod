@@ -94,6 +94,10 @@ partial class NoskGod : ModBase<NoskGod>
             spawnPoint = sb.spawnPoint.Value ?? sb.Owner
         };
     }
+    private class StatueFilter : GameObjectFilter
+    {
+        public override bool Filter(GameObject go) => go.name == "GG_Statue_Nosk";
+    }
     public override void Initialize()
     {
         OldKnightAnimLoad();
@@ -118,6 +122,15 @@ partial class NoskGod : ModBase<NoskGod>
 
 
         UnityEngine.Object.Destroy(AbyssTendrils.LocateMyFSM("Black Charm"));
+
+        new GameObjectWatcher(new StatueFilter(), statue =>
+        {
+            var bc = statue!.GetComponent<BossStatue>();
+            //bc.bossDetails.descriptionKey = "NOSK_STATUE_NAME";
+            //bc.bossDetails.nameKey = "NOSK_STATUE_DESC";
+            bc.bossScene.private_tier2Scene() = null;
+            bc.bossScene.private_tier3Scene() = null;
+        });
     }
     public static void HeroBackDash()
     {

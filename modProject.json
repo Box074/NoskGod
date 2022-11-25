@@ -5,10 +5,10 @@
     "csCompileInfo": true,
     "testMode": true,
     "phaseInfo": {
-        "phase1": 3000,
+        "phase1": 2550,
         "phase2": 2500,
         "phase3": 2300,
-        "lastPhase": 2200,
+        "lastPhase": 1300,
         "___": "//FIXME before releasing"
     },
     "hktool": {

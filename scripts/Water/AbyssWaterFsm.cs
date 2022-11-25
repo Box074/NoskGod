@@ -14,13 +14,13 @@ class AbyssWaterFsm : CSFsm<AbyssWaterFsm>
         var tendir = Instantiate(NoskGod.AbyssTendrils, transform);
         tendir.transform.localPosition = new(x, -6.0919f, 8.904f + UnityEngine.Random.value * 0.5f);
         Destroy(tendir.GetComponent<AudioSource>());
-        
+
         tendir.SetActive(true);
         tendirs.Add(tendir);
     }
     public void TendirsCalmDown()
     {
-        foreach(var v in tendirs)
+        foreach (var v in tendirs)
         {
             v.FindChildWithPath("Alert Range")?.SetActive(false);
             v.LocateMyFSM("Control").FsmVariables.FindFsmBool("Alert Range").Value = false;
@@ -28,7 +28,7 @@ class AbyssWaterFsm : CSFsm<AbyssWaterFsm>
     }
     public void TendirsAngry()
     {
-        foreach(var v in tendirs)
+        foreach (var v in tendirs)
         {
             v.FindChildWithPath("Alert Range")?.SetActive(false);
             v.LocateMyFSM("Control").FsmVariables.FindFsmBool("Alert Range").Value = true;
@@ -36,7 +36,7 @@ class AbyssWaterFsm : CSFsm<AbyssWaterFsm>
     }
     public void TendirsNormal()
     {
-        foreach(var v in tendirs)
+        foreach (var v in tendirs)
         {
             v.FindChildWithPath("Alert Range")?.SetActive(true);
         }
@@ -57,6 +57,16 @@ class AbyssWaterFsm : CSFsm<AbyssWaterFsm>
         var dh = gameObject.AddComponent<DamageHero>();
         dh.damageDealt = 1;
         dh.hazardType = 5;
+
+        var mat = new Material(Shader.Find("Sprites/Default"));
+        foreach (var v in GetComponentsInChildren<Renderer>())
+        {
+            v.sharedMaterial = mat;
+            unchecked
+            {
+                v.sortingLayerID = (int)3945752401; //Over
+            }
+        }
 
         SpawnTendirs(-95.8986f);
         SpawnTendirs(-91.455f);
@@ -87,7 +97,7 @@ class AbyssWaterFsm : CSFsm<AbyssWaterFsm>
                 {
                     UnityEngine.Object.Destroy(v);
                     NoskShade.shades.Remove(v);
-                    if(NoskShade.shades.Count < maxTotal.Value) break;
+                    if (NoskShade.shades.Count < maxTotal.Value) break;
                 }
                 if (NoskShade.GetShadeCount() > maxTotal.Value)
                 {
@@ -105,6 +115,7 @@ class AbyssWaterFsm : CSFsm<AbyssWaterFsm>
     {
         DefineEvent(FsmEvent.Finished, nameof(Idle));
         yield return StartActionContent;
+        TendirsCalmDown();
         var pos = transform.position;
         var hpos = pos;
         hpos.y = raiseUpTo;
@@ -117,5 +128,6 @@ class AbyssWaterFsm : CSFsm<AbyssWaterFsm>
             p = Mathf.Clamp01(p);
             transform.position = Vector3.Lerp(pos, hpos, p);
         }
+        TendirsNormal();
     }
 }

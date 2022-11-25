@@ -73,13 +73,10 @@ partial class NoskFsm : CSFsm<NoskFsm>
         yield return StartActionContent;
         FSMUtility.SendEventToGameObject(pm.gameObject, "NOSK VESSEL SPAWN STOP");
         pm.Fsm.GetState("Roof Drop").GetFSMStateActionOnState<FlingObjectsFromGlobalPoolTime>().gameObject = NoskGod.VomitGlobNosk;
-        pm.Fsm.GetState("Land 2").AppendFsmStateAction<InvokeAction>(new(a =>
-        {
-            a.Fsm.SetState(nameof(JumpCheck));
-        }));
         dropVesselFsm.SpawnShade.Value = true;
         IsTranPhase = false;
         enterP2Time = Time.time;
+        isPhase2 = true;
     }
     [FsmState]
     private IEnumerator NoskDeath()

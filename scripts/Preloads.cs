@@ -14,6 +14,10 @@ partial class NoskGod : ModBase<NoskGod>
     public static AudioClip hero_damage = null!;
     [PreloadSharedAssets("hollow_shade_startle")]
     public static AudioClip hollow_shade_startle = null!;
+    [PreloadSharedAssets("mimic_spider_land")]
+    public static AudioClip mimic_spider_land = null!;
+    [PreloadSharedAssets("mimic_spider_jump")]
+    public static AudioClip mimic_spider_jump = null!;
     [PreloadSharedAssets("Audio Player Actor")]
     public static AudioSource AudioPlayerActor = null!;
     [PreloadSharedAssets("Hit Flash Black")]

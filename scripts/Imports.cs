@@ -20,6 +20,7 @@ global using UnityEngine;
 global using UnityEngine.Audio;
 
 global using HKGraphics;
+global using HKGraphics.CameraEffects;
 global using HKGraphics.Effects;
 
 global using Newtonsoft.Json;

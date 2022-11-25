@@ -22,7 +22,7 @@ partial class NoskFsm : CSFsm<NoskFsm>
         
 
         yield return RoarPrepare();
-        GetComponent<AudioSource>().PlayOneShot(NoskGod.mimic_spider_scream);
+        ac.PlayOneShot(NoskGod.mimic_spider_scream);
         var roar = DoRoar();
         Music_P3_Intro.TransitionTo(0, 0.75f);
 
@@ -57,50 +57,58 @@ partial class NoskFsm : CSFsm<NoskFsm>
         yield return StartActionContent;
         spawnVesselOnLand = false;
         spawnShadeOnLand = true;
+        farawayPlatform = false;
+        rig.isKinematic = false;
+        col.isTrigger = false;
         if(NoskShade.GetShadeCount() > 4) yield return "CANCEL";
-        jumpCount.Value = UnityEngine.Random.Range(1, 2);
+        jumpCount.Value = UnityEngine.Random.Range(GetWithLevel(1, 2, 2), GetWithLevel(2, 4, 4));
         yield return "JUMP";
     }
-    [FsmState]
-    private IEnumerator P3S_Hide()
-    {
-        yield return StartActionContent;
-        farawayPlatform = true;
-    }
+    
     [FsmState]
     private IEnumerator P3Idle()
     {
         DefineEvent("ATTACK", nameof(P3AttackChoice));
+        DefineEvent("HIDE ATTACK", nameof(P3HideAttackChoice));
         yield return StartActionContent;
-        yield return "ATTACK";
+        yield return isHidden ? "HIDE ATTACK" : "ATTACK";
     }
+    
+    
     [FsmState]
     private IEnumerator P3AttackChoice()
     {
         DefineEvent("JUMP", nameof(P3S_Jump));
+        DefineEvent("HIDE", nameof(P3S_Hide));
         SendRandomEventV3 eventer = new();
         eventer.events = new[]
         {
-            FsmEvent.GetFsmEvent("JUMP")
+            FsmEvent.GetFsmEvent("JUMP"),
+            FsmEvent.GetFsmEvent("HIDE")
         };
         eventer.weights = new FsmFloat[]
         {
+            0.15f,
             0.15f
         };
         eventer.trackingInts = new FsmInt[]
         {
+            0,
             0
         };
         eventer.eventMax = new FsmInt[]{
+            1,
             1
         };
         eventer.trackingIntsMissed = new FsmInt[]
         {
+            0,
             0
         };
         eventer.missedMax = new FsmInt[]
         {
-            5
+            5,
+            8
         };
         yield return StartActionContent;
         anim.Play("Idle");

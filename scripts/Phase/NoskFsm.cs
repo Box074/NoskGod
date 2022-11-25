@@ -7,6 +7,36 @@ partial class NoskFsm : CSFsm<NoskFsm>
     {
         Init();
     }
+    [FsmState("Land 2")]
+    private IEnumerator Land2()
+    {
+        var orig = OriginalActions;
+        DefineEvent("ORIG FINISHED", "Roof Jump?");
+        DefineEvent("JUMP CHECK", nameof(JumpCheck));
+        yield return StartActionContent;
+        if (nextStateAfterLand != null)
+        {
+            pm.Fsm.SetState(nextStateAfterLand);
+            Debug.Log($"NextStateAfterLand: {nextStateAfterLand}");
+            nextStateAfterLand = null;
+            yield break;
+        }
+        col.isTrigger = false;
+        if (spawnVesselOnLand) PlayMakerFSM.BroadcastEvent("SPAWN RND");
+        if (spawnShadeOnLand && waterFsm != null)
+        {
+            int c = UnityEngine.Random.Range(spawnShadeMin, spawnShadeMax);
+            waterFsm.spawnCount = c;
+            PlayMakerFSM.BroadcastEvent("ABYSS WATER SPAWN");
+        }
+        yield return orig;
+        InvokeActions(orig);
+        if(isPhase2)
+        {
+            yield return "JUMP CHECK";
+        }
+        yield return "ORIG FINISHED";
+    }
     protected override void OnBindPlayMakerFSM(PlayMakerFSM pm)
     {
         hm = pm.GetComponent<HealthManager>();
@@ -18,14 +48,12 @@ partial class NoskFsm : CSFsm<NoskFsm>
         hm.hp = CompileInfo.TEST_MODE ? 2550 : 3500;
         pm.Fsm.GetState("Land 2").InsertFsmStateAction<InvokeAction>(new(() =>
         {
-            if (spawnVesselOnLand) PlayMakerFSM.BroadcastEvent("SPAWN RND");
-            if (spawnShadeOnLand && waterFsm != null)
-            {
-                int c = UnityEngine.Random.Range(spawnShadeMin, spawnShadeMax);
-                waterFsm.spawnCount = c;
-                PlayMakerFSM.BroadcastEvent("ABYSS WATER SPAWN");
-            }
+
         }), 0);
+        pm.Fsm.GetState("Launch").AppendFsmStateAction<InvokeAction>(new(() =>
+        {
+            rig.isKinematic = false;
+        }));
         pm.Fsm.GetState("Aim Jump").ForEachFsmStateAction<RandomFloat>(x => new InvokeAction(() =>
         {
             if (nextEnterP2 == 0)
@@ -66,26 +94,7 @@ partial class NoskFsm : CSFsm<NoskFsm>
         bones.SetActive(false);
     }
 
-    private void MakeScene()
-    {
-        var bg = new GameObject("Bg");
-        bg.AddComponent<SpriteRenderer>().sprite = NoskGod.bg01;
-        bg.transform.position = new Vector3(78.1956f, 3.4769f, 3.8164f);
-        bg.transform.localScale = new Vector3(3, 3, 3);
 
-        UnityEngine.Object.Instantiate(bg, new Vector3(84.9119f, 4.3642f, 4.1728f), Quaternion.identity);
-        UnityEngine.Object.Instantiate(bg, new Vector3(89.3991f, 5.5078f, 4.4055f), Quaternion.identity);
-        UnityEngine.Object.Instantiate(bg, new Vector3(96.3463f, 6.2787f, 4.5873f), Quaternion.identity);
-        UnityEngine.Object.Instantiate(bg, new Vector3(102.2135f, 5.8351f, 4.7073f), Quaternion.identity);
-        UnityEngine.Object.Instantiate(bg, new Vector3(109.5589f, 4.0169f, 4.3818f), Quaternion.identity);
-        UnityEngine.Object.Instantiate(bg, new Vector3(113.9788f, 4.0169f, 4.5073f), Quaternion.identity);
-        UnityEngine.Object.Instantiate(bg, new Vector3(117.5806f, 5.0605f, 5.1f), Quaternion.identity);
-
-        GameObject.Find("GG_Arena_Prefab/Crowd")?.SetActive(false);
-        //GameObject.Find("GG_Arena_Prefab/BG")?.SetActive(false);
-        GameObject.Find("GG_Arena_Prefab/Godseeker Crowd")?.SetActive(false);
-        Destroy(GameObject.Find("GG_Arena_Prefab")?.GetComponent<AudioSource>());
-    }
 
     [FsmState]
     private IEnumerator TranP1()

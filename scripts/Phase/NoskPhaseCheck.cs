@@ -29,21 +29,24 @@ partial class NoskPhaseCheck : CSFsm<NoskPhaseCheck>
         yield return StartActionContent;
         if(mainFsm.IsTranPhase) yield return FsmEvent.Finished;
 
-        if (hm.hp <= mainFsm.Phase1HP && mainFsm.nextEnterP2 == -2)
+        if (hm.hp < mainFsm.Phase1HP && mainFsm.nextEnterP2 == -2)
         {
             mainFsm.IsTranPhase = true;
             mainFsm.nextEnterP2 = -1;
+            hm.hp = mainFsm.Phase1HP;
             FSMUtility.SendEventToGameObject(pm.gameObject, "NOSK START TRAN -1");
         }
-        if (hm.hp <= mainFsm.Phase2HP && !mainFsm.isVoid.Value && mainFsm.nextEnterP2 == -1)
+        if (hm.hp < mainFsm.Phase2HP && !mainFsm.isVoid.Value && mainFsm.nextEnterP2 == -1)
         {
             mainFsm.IsTranPhase = true;
             mainFsm.nextEnterP2 = 0;
+            hm.hp = mainFsm.Phase2HP;
             FSMUtility.SendEventToGameObject(pm.gameObject, "NOSK START TRAN");
         }
         if(hm.hp <= mainFsm.Phase3HP && !mainFsm.isPhase3)
         {
             mainFsm.IsTranPhase = true;
+            hm.hp = mainFsm.Phase3HP;
             FSMUtility.SendEventToGameObject(pm.gameObject, "NOSK START TRAN 3");
         }
     }
