@@ -1,0 +1,30 @@
+name: Build
+
+on: [push, pull_request]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup .NET 7
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 7
+    - name: Build
+      run: |
+        cd HKMod
+        dotnet build -c=Release
+    - name: Upload
+      uses: actions/upload-artifact@v3
+      with:
+        name: Publish Output
+        path: ./HKMod/bin/Publish
+    - name: Release
+      uses: softprops/action-gh-release@v1
+      if: startsWith(github.ref, 'refs/tags/')
+      with:
+        body_path: ./HKMod/bin/Publish/ReleaseInfo.txt
+        files: |
+          ./HKMod/bin/Publish/Publish-*.zip
+
