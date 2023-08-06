@@ -1,0 +1,60 @@
+ManifestFileVersion: 0
+CRC: 1238657095
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8036b9173b9177c93c47671456911452
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 65548259040d616fa816559c5918926e
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 50
+  Script: {instanceID: 0}
+- Class: 60
+  Script: {instanceID: 0}
+- Class: 61
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: f9e743a913c16a14098a093030d80fcf, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f069105fc17395942ae8aaad669cb505, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e697d838cf66a224397127f7475f5a54, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 044522f461bb66f4da1a4630ffd7d3dc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8570885dbc4613049a5506536f058e73, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 212
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Plat Lager.prefab
+- Assets/VoidWave.prefab
+- Assets/Textures/Static/void-nosk.png
+- Assets/Textures/Static/void-vomit.png
+- Assets/Textures/Static/knight-atlas.png
+- Assets/Textures/Static/skull_corpses_layered_0003_1_set.png
+Dependencies: []

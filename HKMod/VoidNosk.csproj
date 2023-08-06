@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <ModName>Void Nosk</ModName>
+    <MultiPlatform>true</MultiPlatform>
+
+    <SupportWin>true</SupportWin>
+    <SupportLinux>false</SupportLinux>
+    <SupportOSX>false</SupportOSX>
+
+    <RootNamespace>NoskGod</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Fody" Version="6.7.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="HKBuildUtils" Version="0.6.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Compile Include="../Assets/**/*.cs" />
+    <Compile Remove="../Assets/HKScripts/**/*.cs" />
+    <Compile Remove="../Assets/Editor/**/*.cs" />
+    <Compile Remove="../Assets/Scripts/iTween.cs" />
+
+    <ModResource Include="AssetBundles/Windows/voidnosk" Condition="$(IsWin) == true" />
+    <ModResource Include="AssetBundles/Linux/voidnosk" Condition="$(IsLinux) == true" />
+    <ModResource Include="AssetBundles/OSX/voidnosk" Condition="$(IsOSX) == true" />
+
+    <ModResource Include="Resources/**/*" />
+
+    <ModReference Include="HKTool" AssemblyName="HKTool2" />
+
+    <ReflectHelper Include="Assembly-CSharp" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+
+</Project>
