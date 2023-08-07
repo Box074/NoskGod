@@ -19,6 +19,11 @@ partial class NoskGod : ModBase<NoskGod>
 
     public static GameObject waterFallPrefab = assetBundle.LoadAsset<GameObject>("Assets/Waterfall.prefab");
 
+    public static GameObject Death_Anim = assetBundle.LoadAsset<GameObject>("Assets/Nosk Death.prefab");
+
+    [Preload("GG_Radiance", "Boss Control/Absolute Radiance/Death/Knight Split")]
+    public static GameObject KnightSplit = null!;
+
     [PreloadSharedAssets(455, "GG Sad")]
     public static MusicCue GGSadMusicCue = null!;
     [PreloadSharedAssets(290, "Corpse Mimic Spider", true)]

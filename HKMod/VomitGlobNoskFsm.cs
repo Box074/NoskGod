@@ -29,9 +29,9 @@ class VomitGlobNoskFsm : CSFsm<VomitGlobNoskFsm>
         yield return StartActionContent;
         InvokeActions(original);
         nosk = FindObjectOfType<NoskFsm>();
-        if(UnityEngine.Random.value <= 0.65f && NoskShade.GetShadeCount() <= 5)
+        if(Random.value <= 0.65f && NoskShade.GetShadeCount() <= 5)
         {
-            yield return new WaitForSeconds(1.5f * (1f + UnityEngine.Random.value));
+            yield return new WaitForSeconds(1.5f * (1f + Random.value));
             if (nosk.isPhase3 && Random.value < 0.45f)
             {
                 Instantiate(NoskGod.SR_QuakePrefab, transform.position + new Vector3(0, -4, 0), Quaternion.identity);

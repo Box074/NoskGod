@@ -31,7 +31,7 @@ class DropVesselFsm : CSFsm<DropVesselFsm>
     {
         DefineEvent("FINISHED", nameof(CheckCount));
         yield return StartActionContent;
-        var x = UnityEngine.Random.Range(74, 114);
+        var x = Random.Range(74, 114);
         var drop = Instantiate(NoskGod.CorpseSpawn, new Vector3(x, RoofY.Value, 0.0038f), Quaternion.identity);
         drop.name = "Abyss Drop Corpse";
         dropCorpses.Add(drop);
@@ -70,10 +70,10 @@ class DropVesselFsm : CSFsm<DropVesselFsm>
             SpawnCount.Value--;
             var waitTime = FallType.Value switch
             {
-                0 => UnityEngine.Random.Range(0.01f, 0.25f),
-                1 => UnityEngine.Random.Range(0.5f, 0.8f),
-                2 => UnityEngine.Random.Range(1.5f, 2.8f),
-                3 => UnityEngine.Random.Range(0.01f, 0.1f),
+                0 => Random.Range(0.01f, 0.25f),
+                1 => Random.Range(0.5f, 0.8f),
+                2 => Random.Range(1.5f, 2.8f),
+                3 => Random.Range(0.01f, 0.1f),
                 _ => 0
             };
             if (waitTime > 0) yield return new WaitForSeconds(waitTime);
@@ -86,7 +86,7 @@ class DropVesselFsm : CSFsm<DropVesselFsm>
     {
         DefineEvent("FINISHED", nameof(CheckCount));
         yield return StartActionContent;
-        SpawnCount.Value = UnityEngine.Random.Range(1, 3);
+        SpawnCount.Value = Random.Range(1, 3);
     }
     [FsmState]
     private IEnumerator Idle()

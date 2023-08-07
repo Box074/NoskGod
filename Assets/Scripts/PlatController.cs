@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class PlatController : MonoBehaviour
 {
+    public static PlatController currentPlat;
     public static bool forceFlat = false;
+    public SpriteRenderer spriteRenderer;
     public VoidWaveMesh wave;
     public PolygonCollider2D extraCol;
     public AudioClip intoWaterAudio;
@@ -13,6 +15,7 @@ public class PlatController : MonoBehaviour
     public GameObject ColliderPointL;
     public GameObject ColliderPointR;
     public bool skipAnim;
+    private Collider2D hero;
     private bool first = false;
     // Start is called before the first frame update
     void Start()
@@ -46,7 +49,7 @@ public class PlatController : MonoBehaviour
             }
             else
             {
-                SetSortingOrder(100);
+                SetSortingOrder(10);
                 if (rig.velocity.y <= 0)
                 {
                     first = true;
@@ -58,7 +61,7 @@ public class PlatController : MonoBehaviour
         }
         extraCol.enabled = true;
         GetComponent<Collider2D>().enabled = true;
-        SetSortingOrder(100);
+        SetSortingOrder(10);
         Destroy(rig);
         return;
     }
@@ -71,6 +74,29 @@ public class PlatController : MonoBehaviour
             UpdateAnim();
             return;
         }
+        if(hero == null)
+        {
+            hero = GameObject.FindGameObjectWithTag("Player")?.GetComponent<Collider2D>();
+        }
+        if(hero != null)
+        {
+            var b = spriteRenderer.bounds;
+            var hb = hero.bounds;
+            if(b.min.x <= hb.min.x && b.max.x >= hb.max.x && b.min.y <= hb.min.y)
+            {
+                currentPlat = this;
+            }
+            else
+            {
+                if(currentPlat == this)
+                {
+                    currentPlat = null;
+                }
+            }
+        }
+        
+
+
         var op = (transform.position - wave.transform.position).x * 
             wave.transform.localScale.x + 
             wave.width / 2f;

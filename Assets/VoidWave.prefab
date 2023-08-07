@@ -104,6 +104,7 @@ MonoBehaviour:
   depth: 10
   width: 100
   pointsPerUnit: 50
+  damageHero: {fileID: 2598307368765438617}
 --- !u!60 &4897478536101141162
 PolygonCollider2D:
   m_ObjectHideFlags: 0

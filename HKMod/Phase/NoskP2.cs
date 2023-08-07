@@ -21,14 +21,14 @@ partial class NoskFsm : CSFsm<NoskFsm>
         }
         //if(!isFirst.Value) yield return new WaitForSeconds(UnityEngine.Random.Range(0.15f, 1.5f));
         isFirst.Value = false;
-        var v = UnityEngine.Random.value;
+        var v = Random.value;
         if (v <= 0.35f)
         {
             yield return "ROOF";
         }
         else
         {
-            jumpCount.Value = UnityEngine.Random.Range(4, 5);
+            jumpCount.Value = Random.Range(4, 5);
             yield return "JUMP";
         }
     }
@@ -72,13 +72,5 @@ partial class NoskFsm : CSFsm<NoskFsm>
         IsTranPhase = false;
         enterP2Time = Time.time;
         isPhase2 = true;
-    }
-    [FsmState]
-    private IEnumerator NoskDeath()
-    {
-        DefineGlobalEvent("NOSK DEAD");
-        yield return StartActionContent;
-        _ = NoskShade.GetShadeCount();
-        foreach (var v in NoskShade.shades) FSMUtility.SendEventToGameObject(v, "ZERO HP");
     }
 }

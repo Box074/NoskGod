@@ -31,12 +31,12 @@ class AbyssWaterFsm : CSFsm<AbyssWaterFsm>
         yield return StartActionContent;
         for (int i = 0; i < spawnCount.Value; i++)
         {
-            var p = new Vector3(UnityEngine.Random.Range(74, 114), GetComponent<BoxCollider2D>().bounds.max.y - 1, 0);
+            var p = new Vector3(Random.Range(74, 114), GetComponent<BoxCollider2D>().bounds.max.y - 1, 0);
             if (NoskShade.GetShadeCount() > maxTotal.Value)
             {
                 foreach (var v in NoskShade.shades.ToArray().Where(x => !x.GetComponent<MeshRenderer>().isVisible))
                 {
-                    UnityEngine.Object.Destroy(v);
+                    Destroy(v);
                     NoskShade.shades.Remove(v);
                     if (NoskShade.shades.Count < maxTotal.Value) break;
                 }

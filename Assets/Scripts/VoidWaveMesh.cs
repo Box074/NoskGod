@@ -1,5 +1,6 @@
 using Assets.Scripts.Wave;
 using System;
+using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -23,6 +24,8 @@ public class VoidWaveMesh : MonoBehaviour
 
     public int pointsPerUnit;
 
+    public DamageHero damageHero;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +33,7 @@ public class VoidWaveMesh : MonoBehaviour
         filter = GetComponent<MeshFilter>();
         col = GetComponent<PolygonCollider2D>();
 
-        GetComponent<MeshRenderer>().sortingOrder = 10;
+        GetComponent<MeshRenderer>().sortingOrder = 1000;
     }
 
     private List<Vector2> CalcPoints(int pointsPerUnit, float? minX = null, float? maxX = null)
@@ -97,7 +100,7 @@ public class VoidWaveMesh : MonoBehaviour
             {
                 if (importantBlocks[i] != s) break;
             }
-            points.AddRange(CalcPoints(s ? Mathf.Max(pointsPerUnit, 4) : 1, beg, i));
+            points.AddRange(CalcPoints(s ? Mathf.Min(pointsPerUnit, 8) : 1, beg, i));
         }
 
         var path = new Vector2[points.Count + 2];
@@ -264,6 +267,10 @@ public class VoidWaveMesh : MonoBehaviour
             transform.localScale.x +
             width / 2f;
     }
+    public float GetMinY(float startX, float endX)
+    {
+        return CalcPoints(2, startX, endX).Select(x => x.y).Min();
+    }
     public bool InRange(float offset)
     {
         return offset >= 0 && offset <= width;
@@ -272,6 +279,14 @@ public class VoidWaveMesh : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(PlatController.currentPlat != null)
+        {
+            damageHero.damageDealt = 0;
+        }
+        else
+        {
+            damageHero.damageDealt = 1;
+        }
         nextUpdate -= Time.deltaTime;
         if(nextUpdate <= 0)
         {

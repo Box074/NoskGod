@@ -82,13 +82,13 @@ partial class NoskGod : ModBase<NoskGod>
         public override void OnEnter()
         {
             if(spawnPoint == null) spawnPoint = Owner;
-            var count = UnityEngine.Random.Range(10, 16);
+            var count = Random.Range(10, 16);
             for (int i = 0; i < count; i++)
             {
                 var orb = Instantiate(ShadeOrb, spawnPoint.transform.position, Quaternion.identity);
                 orb.SetActive(true);
                 var rig = orb.GetComponent<Rigidbody2D>();
-                rig.velocity = new(UnityEngine.Random.value * 25 + 25, UnityEngine.Random.value * 15 + 15);
+                rig.velocity = new(Random.value * 25 + 25, Random.value * 15 + 15);
             }
             Finish();
         }
@@ -139,6 +139,17 @@ partial class NoskGod : ModBase<NoskGod>
         });
 
         On.HeroController.HazardRespawn += HeroController_HazardRespawn;
+        On.HealthManager.TakeDamage += HealthManager_TakeDamage;
+    }
+
+    private void HealthManager_TakeDamage(On.HealthManager.orig_TakeDamage orig, HealthManager self, 
+        HitInstance hitInstance)
+    {
+        orig(self, hitInstance);
+        if (hitInstance.AttackType == AttackTypes.Nail)
+        {
+            FSMUtility.SendEventToGameObject(self.gameObject, "NAIL HIT", true);
+        }
     }
 
     private IEnumerator HeroController_HazardRespawn(On.HeroController.orig_HazardRespawn orig, 
@@ -230,7 +241,7 @@ partial class NoskGod : ModBase<NoskGod>
             {
                 result = new Vector2(num, 0f);
             }
-            rig.velocity = Modding.ModHooksR.DashVelocityChange(result);
+            rig.velocity = ModHooksR.DashVelocityChange(result);
             yield return null;
         }
     }

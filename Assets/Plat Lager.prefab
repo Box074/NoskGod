@@ -215,7 +215,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0429461, y: -0.41513908}
+  m_Offset: {x: 0.19534379, y: -0.41513908}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -226,7 +226,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.8415976, y: 0.7272625}
+  m_Size: {x: 1.5368022, y: 0.7272625}
   m_EdgeRadius: 0
 --- !u!114 &8176533737600553167
 MonoBehaviour:
@@ -364,7 +364,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.07317734, y: 0.039915085}
+  m_Offset: {x: -0.008701444, y: 0.039915085}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -375,7 +375,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.606861, y: 1.0078564}
+  m_Size: {x: 4.228175, y: 1.0078564}
   m_EdgeRadius: 0
 --- !u!114 &2101323441600201845
 MonoBehaviour:
@@ -389,6 +389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e697d838cf66a224397127f7475f5a54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 4833869102312788211}
   wave: {fileID: 0}
   extraCol: {fileID: 3562287206260114234}
   intoWaterAudio: {fileID: 8300000, guid: 8782439ff436b7e45839cd611b205d9f, type: 3}
@@ -528,7 +529,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.071576715, y: -0.32924742}
+  m_Offset: {x: -0.24742013, y: -0.32924742}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -539,7 +540,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.7843361, y: 0.89904404}
+  m_Size: {x: 1.4326493, y: 0.89904404}
   m_EdgeRadius: 0
 --- !u!114 &8145525597667346027
 MonoBehaviour:
@@ -714,6 +715,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d9d5de8d5532a54fa3a7d727fa55bfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 4833869102312788211}
 --- !u!1 &8189614722405764985
 GameObject:
   m_ObjectHideFlags: 0

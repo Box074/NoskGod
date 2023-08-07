@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlatQuakeChecker : MonoBehaviour
 {
     private VoidWaveMesh wave;
+    public SpriteRenderer spriteRenderer;
     // Start is called before the first frame update
     void Awake()
     {
@@ -14,14 +15,25 @@ public class PlatQuakeChecker : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.isTrigger) return;
-        
+        var pos = transform.position.x;
+        var rb2d = collision.attachedRigidbody;
+        var b = spriteRenderer.bounds;
+
+        if(rb2d != null)
+        {
+            var offset = Mathf.Clamp((rb2d.worldCenterOfMass - (Vector2)transform.position).x, -b.size.x
+                , b.size.x
+                );
+            pos += + offset;
+        }
+
         var trig = collision.GetComponent<IPlatQuakeTrigger>();
         if(trig != null)
         {
-            wave.DoFall(trig.Width, trig.Height, wave.GetOffsetX(transform.position.x), 3);
+            wave.DoFall(trig.Width, trig.Height, wave.GetOffsetX(pos), 3);
             return;
         }
-        var rb2d = collision.attachedRigidbody;
+        
         if(rb2d != null)
         {
             var limitVel = rb2d.GetComponent<NoVelLimit>() == null;
@@ -35,7 +47,7 @@ public class PlatQuakeChecker : MonoBehaviour
                 }
                 if(d < -12)
                 {
-                    wave.DoFall(1, d / 100, wave.GetOffsetX(transform.position.x), 3);
+                    wave.DoFall(1, d / 100, wave.GetOffsetX(pos), 3);
                 }
             }
         }

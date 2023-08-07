@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 3376319280
+CRC: 2621450860
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: f91d3f2d4b4fcacd61296c40e81a03d8
+    Hash: ef82630d14baf7f3ae159b12d3e58b7b
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 65548259040d616fa816559c5918926e
+    Hash: e9f5ccd707d73a8b7bff592ac086176d
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -29,18 +29,54 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 61
   Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 82
+  Script: {instanceID: 0}
 - Class: 83
   Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 6d9d5de8d5532a54fa3a7d727fa55bfc, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: f9e743a913c16a14098a093030d80fcf, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: f069105fc17395942ae8aaad669cb505, type: 3}
+  Script: {fileID: 11500000, guid: 2554abe7b69142646bd49e3ad823c73b, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: e697d838cf66a224397127f7475f5a54, type: 3}
+  Script: {fileID: 11500000, guid: f069105fc17395942ae8aaad669cb505, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 044522f461bb66f4da1a4630ffd7d3dc, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: ba3e91fd7eb2905489197c636c91f6f6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e697d838cf66a224397127f7475f5a54, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 6c97a5249940fdc4aafafeaff73f7891, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0239a19f05e25c0409045998d2f250cb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e0284881e4a338844bef2e3b852f45fa, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 87f9261ed637ee649b2918a71ebf37f5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 809a962ca4f5b38468e09aed60bf6b4b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e0f6e58f6b1a49e4c919294da474a187, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a83ce059130bc2841b3fa65825f60338, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 62b08bec4c0260446baa124d9b502ec1, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c747ccd07b95eed419f155f2e0610fc8, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 8570885dbc4613049a5506536f058e73, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 15d223d5b6ecbbd498d6990daea879da, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 03896f93c5d888c42b40d8ef708eb34a, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 - Class: 212
@@ -55,6 +91,13 @@ Assets:
 - Assets/VoidWave.prefab
 - Assets/Textures/Static/void-nosk.png
 - Assets/Textures/Static/void-vomit.png
+- Assets/Shade/Quake Shade.prefab
 - Assets/Textures/Static/knight-atlas.png
+- Assets/Waterfall.prefab
+- Assets/Shade/Shade Rise.prefab
+- Assets/Dummy Anim.prefab
+- Assets/Shade/SR_Quake.prefab
+- Assets/Nosk Death.prefab
 - Assets/Textures/Static/skull_corpses_layered_0003_1_set.png
+- Assets/Shade/SR_Quake_Super.prefab
 Dependencies: []

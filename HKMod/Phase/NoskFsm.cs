@@ -35,9 +35,6 @@ partial class NoskFsm : CSFsm<NoskFsm>
     protected override void OnBindPlayMakerFSM(PlayMakerFSM pm)
     {
         hm = pm.GetComponent<HealthManagerR>();
-        base.OnBindPlayMakerFSM(pm);
-
-        
 
         IEnumerator SetBGM()
         {
@@ -48,7 +45,9 @@ partial class NoskFsm : CSFsm<NoskFsm>
 
         SetBGM().StartCoroutine();
 
-        hm.hp = 2255;
+        hm.hp = 2600;
+
+
         pm.Fsm.GetState("Land 2").InsertFsmStateAction<InvokeAction>(new(() =>
         {
 
@@ -66,7 +65,7 @@ partial class NoskFsm : CSFsm<NoskFsm>
             var hpos = HeroController.instance.transform.position.x;
             while (true)
             {
-                var tx = UnityEngine.Random.Range(JumpMinX.Value, JumpMaxX.Value);
+                var tx = Random.Range(JumpMinX.Value, JumpMaxX.Value);
                 if (farawayHero && Mathf.Abs(tx - hpos) < 4) continue;
                 if (farawayPlatform && (tx > PlatformLeftX && tx < PlatformRightX)) continue;
                 TargetX.Value = tx;
@@ -80,6 +79,14 @@ partial class NoskFsm : CSFsm<NoskFsm>
                 pm.Fsm.SetState(nameof(EnterP2));
                 nextEnterP2 = 2;
             }
+        }), 0);
+        pm.Fsm.GetState("Roof Antic").InsertFsmStateAction<InvokeAction>(new(() =>
+        {
+            dh.damageDealt = 0;
+        }), 0);
+        pm.Fsm.GetState("To Fall").InsertFsmStateAction<InvokeAction>(new(() =>
+        {
+            dh.damageDealt = 1;
         }), 0);
         pm.Fsm.GetState("Falling").InsertFsmStateAction<InvokeAction>(new(() =>
         {
@@ -153,10 +160,16 @@ partial class NoskFsm : CSFsm<NoskFsm>
         yield return StartActionContent;
         PlayerData.instance.disablePause = false;
 
+        var cGO = new GameObject();
+        cGO.transform.position = new(94.47f, 7.4081f, 0);
+
+        var rc = HeroController.instance.gameObject.LocateMyFSM("Roar Lock");
+        rc.FsmVariables.FindFsmGameObject("Roar Object").Value = cGO;
+
         var arr = FindObjectsOfType<GameObject>(false).Where(x => x.name == "Abyss Drop Corpse").Take(8);
         foreach (var v in arr)
         {
-            var sibling = NoskShade.Spawn(v.transform.position, 50, Head.Value);
+            var sibling = NoskShade.Spawn(v.transform.position, 50, cGO);
             Destroy(sibling.FindChild("Alert Range"));
             sibling.SetActive(true);
             //ctrl.Fsm.SetState("Pause");
@@ -176,13 +189,6 @@ partial class NoskFsm : CSFsm<NoskFsm>
 
         FSMUtility.SetBool(GameCameras.instance.cameraShakeFSM, "RumblingBig", false);
 
-        
-
-        var mesh = pm.GetComponent<MeshRenderer>();
-        var rig = pm.GetComponent<Rigidbody2D>();
-        var anim = pm.GetComponent<tk2dSpriteAnimator>();
-        var dream = pm.GetComponent<EnemyDreamnailReactionR>();
-        var col = pm.GetComponent<Collider2D>();
         DestroyImmediate(pm.GetComponent<SpriteFlash>());
         col.enabled = true;
         pm.gameObject.AddComponent<SpriteTweenColorNeutral>();
@@ -220,9 +226,9 @@ partial class NoskFsm : CSFsm<NoskFsm>
         propBlock.SetTexture("_MainTex", NoskGod.voidNoskTex);
         pm.GetComponent<MeshRenderer>().SetPropertyBlock(propBlock);
 
-        pm.transform.position = origPos;
+        pm.transform.position = cGO.transform.position;
         pm.transform.SetPositionZ(5.2f);
-        mesh.enabled = true;
+        rend.enabled = true;
         anim.Play("Jump");
         rig.isKinematic = false;
         rig.velocity = new Vector2(0, 55);
@@ -291,7 +297,7 @@ partial class NoskFsm : CSFsm<NoskFsm>
 
         yield return new WaitForSeconds(1.5f);
 
-        HeroController.instance.gameObject.LocateMyFSM("Roar Lock").Fsm.GetFsmGameObject("Roar Object").Value = Head.Value;
+        //HeroController.instance.gameObject.LocateMyFSM("Roar Lock").Fsm.GetFsmGameObject("Roar Object").Value = Head.Value;
 
         MakeScene();
 

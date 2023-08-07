@@ -4,6 +4,10 @@ namespace NoskGodMod;
 partial class NoskFsm : CSFsm<NoskFsm>
 {
     private GameObject bones = Instantiate(NoskGod.Bone);
+
+    [FsmVar("HUD Canvas")]
+    private FsmGameObject HUDCanvas = new();
+
     [FsmVar]
     private FsmObject fsmSelf = new();
     [FsmVar]
@@ -34,18 +38,32 @@ partial class NoskFsm : CSFsm<NoskFsm>
     internal bool isPhase2 = false;
     internal bool isPhaseLast = false;
 
+
+    [ComponentBinding]
     public HealthManagerR hm = null!;
+    [ComponentBinding]
     public BoxCollider2D col = null!;
+    [ComponentBinding]
     public Rigidbody2D rig = null!;
+    [ComponentBinding]
     public MeshRenderer rend = null!;
+    [ComponentBinding] 
+    public AudioSource ac = null!;
+    [ComponentBinding]
+    public DamageHero dh = null!;
+    [ComponentBinding]
+    public EnemyDreamnailReactionR dream = null!;
+
     public DropVesselFsm dropVesselFsm = null!;
     public NoskPhaseCheck phaseCheckFsm = null!;
+    [ComponentBinding] 
     public tk2dSpriteAnimator anim = null!;
-    public AudioSource ac = null!;
-    public int Phase1HP = 2500 + GetWithLevel(0, 200, 400);
-    public int Phase2HP = 2000 + GetWithLevel(0, 200, 400);
+    
+    public int Phase1HP = 2200 + GetWithLevel(0, 100, 100);
+    public int Phase2HP = 2000 + GetWithLevel(100, 300, 300);
     public int Phase3HP = 1950;
     public int LastPhaseHP = 1000;
+    public int DeathHP = 400;
     public float TimeP2 = GetWithLevel(30, 50, 50);
 
     public bool spawnVesselOnLand = false;
@@ -61,8 +79,8 @@ partial class NoskFsm : CSFsm<NoskFsm>
     public const MusicMask Music_FakeDie_P2 = MusicMask.MainAndSub;
     public const MusicMask Music_P2_Roar = MusicMask.NoneExtraOrMainAltOrTension;
     public const MusicMask Music_P3_Intro = MusicMask.ActionAndSub;
-    public const MusicMask Music_PL_Start = MusicMask.SubOnly;
-    public const MusicMask Music_PL_Die = MusicMask.MainAndSub;
+    public const MusicMask Music_PL_Start = MusicMask.MainAndAction;
+    public const MusicMask Music_PL_Die = MusicMask.SubOnly;
     public const float PlatformLeftX = 88;
     public const float PlatformRightX = 103.8f;
 }

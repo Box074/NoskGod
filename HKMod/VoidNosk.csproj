@@ -10,6 +10,8 @@
     <SupportOSX>false</SupportOSX>
 
     <RootNamespace>NoskGod</RootNamespace>
+
+    <DefineConstants>HKMOD</DefineConstants>
   </PropertyGroup>
 
   <ItemGroup>
@@ -38,10 +40,6 @@
     <ModReference Include="HKTool" AssemblyName="HKTool2" />
 
     <ReflectHelper Include="Assembly-CSharp" />
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Folder Include="Resources\" />
   </ItemGroup>
 
 </Project>

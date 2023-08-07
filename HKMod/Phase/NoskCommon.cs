@@ -49,13 +49,14 @@ partial class NoskFsm : CSFsm<NoskFsm>
         Instantiate(bg, new Vector3(113.9788f, 4.0169f, 4.5073f), Quaternion.identity);
         Instantiate(bg, new Vector3(117.5806f, 5.0605f, 5.1f), Quaternion.identity);
 
-        GameObject.Find("GG_Arena_Prefab/Crowd")?.SetActive(false);
+        /*GameObject.Find("GG_Arena_Prefab/Crowd")?.SetActive(false);
         GameObject.Find("GG_Arena_Prefab/BG")?.SetActive(false);
         GameObject.Find("GG_Arena_Prefab/Godseeker Crowd")?.SetActive(false);
         Destroy(GameObject.Find("GG_Arena_Prefab")?.GetComponent<AudioSource>());
 
+        */
         foreach (var v in FindObjectsOfType<GameObject>().Where(x => x.name.StartsWith("deepnest_glow_mush_") ||
-                                                                                        x.name.StartsWith("haze") ||
+                                                                                        //x.name.StartsWith("haze") ||
                                                                                         x.name.StartsWith("GG_gods_ray") ||
                                                                                         //x.name.StartsWith("stalactite_small_set") ||
                                                                                         //x.name.StartsWith("deepnest_black_solid") ||
@@ -104,13 +105,6 @@ partial class NoskFsm : CSFsm<NoskFsm>
     {
         DropVesselFsm.Attach(gameObject, out dropVesselFsm, "Init");
         NoskPhaseCheck.Attach(gameObject, out phaseCheckFsm, "Init");
-
-
-        anim = GetComponent<tk2dSpriteAnimator>();
-        col = GetComponent<BoxCollider2D>();
-        rig = GetComponent<Rigidbody2D>();
-        rend = GetComponent<MeshRenderer>();
-        ac = GetComponent<AudioSource>();
 
         var fc = gameObject.AddComponent<NoskFallCheck>();
         fc.pm = FsmComponent;

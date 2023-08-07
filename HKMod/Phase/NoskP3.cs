@@ -81,7 +81,7 @@ partial class NoskFsm : CSFsm<NoskFsm>
         rig.isKinematic = false;
         col.isTrigger = false;
         if(NoskShade.GetShadeCount() > 4) yield return "CANCEL";
-        jumpCount.Value = UnityEngine.Random.Range(GetWithLevel(1, 2, 2), GetWithLevel(2, 4, 4));
+        jumpCount.Value = Random.Range(GetWithLevel(1, 2, 2), GetWithLevel(2, 4, 4));
         yield return "JUMP";
     }
 
@@ -162,16 +162,13 @@ partial class NoskFsm : CSFsm<NoskFsm>
             3
         };
         yield return StartActionContent;
-        if(isLastPhase)
+        if(isPhaseLast)
         {
             yield return "LAST";
         }
         anim.Play("Idle");
-        if(hm.hp < LastPhaseHP)
-        {
-            yield return "INTRO LAST PHASE";
-        }
-        yield return new WaitForSeconds(UnityEngine.Random.Range(0.15f, 0.75f));
+        
+        yield return new WaitForSeconds(Random.Range(0.15f, 0.75f));
         yield return eventer;
     }
 }

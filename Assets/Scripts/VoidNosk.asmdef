@@ -1,3 +1,16 @@
 {
-	"name": "VoidNosk"
+    "name": "VoidNosk",
+    "rootNamespace": "",
+    "references": [
+        "GUID:22577d3e0341fa94e9c2b331fcc3b0bd"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

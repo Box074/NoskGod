@@ -3,7 +3,6 @@ namespace NoskGodMod;
 
 partial class NoskFsm : CSFsm<NoskFsm>
 {
-    public bool isLastPhase = false;
     [FsmState]
     private IEnumerator PLIntro()
     {
@@ -13,6 +12,7 @@ partial class NoskFsm : CSFsm<NoskFsm>
 
         NoskShade.KillAll(gameObject);
 
+        Music_PL_Start.TransitionTo(0, 2f);
         yield return RoarPrepare();
         ac.PlayOneShot(NoskGod.mimic_spider_scream);
         var roar = DoRoar();
@@ -23,7 +23,8 @@ partial class NoskFsm : CSFsm<NoskFsm>
 
         PlayMakerFSM.BroadcastEvent("ABYSS WATER RAISE UP");
 
-
+        hm.hp = LastPhaseHP;
+        hm.isDead = false;
 
         yield return new WaitForSeconds(3.5f);
 
@@ -47,27 +48,12 @@ partial class NoskFsm : CSFsm<NoskFsm>
         yield return "INTRO FINISHED";
     }
 
-    [FsmState]
-    private IEnumerator PL_Death()
-    {
-        yield return StartActionContent;
 
-        transform.position = new(1000, 1000);
-        
-        var hc = HeroControllerR.instance;
-
-        NoskGod.Instance.Log("Boss death!!!!!!!!!!");
-
-
-        BossSceneController.Instance.bossesDeadWaitTime = 1;
-        BossSceneController.Instance.EndBossScene();
-    }
 
     [FsmState]
     private IEnumerator PLIdle()
     {
         DefineEvent("ATTACK", nameof(PLAttackChoice));
-        DefineEvent("DEATH", nameof(PL_Death));
         yield return StartActionContent;
         SetIgnorePlat(false);
         spawnVesselOnLand = false;
