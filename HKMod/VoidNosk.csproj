@@ -6,8 +6,8 @@
     <MultiPlatform>true</MultiPlatform>
 
     <SupportWin>true</SupportWin>
-    <SupportLinux>false</SupportLinux>
-    <SupportOSX>false</SupportOSX>
+    <SupportLinux>true</SupportLinux>
+    <SupportOSX>true</SupportOSX>
 
     <RootNamespace>NoskGod</RootNamespace>
 
