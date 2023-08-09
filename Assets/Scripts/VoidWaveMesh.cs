@@ -24,6 +24,8 @@ public class VoidWaveMesh : MonoBehaviour
 
     public int pointsPerUnit;
 
+    public PolygonCollider2D fallCheckCol;
+
     public DamageHero damageHero;
 
     // Start is called before the first frame update
@@ -36,7 +38,7 @@ public class VoidWaveMesh : MonoBehaviour
         GetComponent<MeshRenderer>().sortingOrder = 1000;
     }
 
-    private List<Vector2> CalcPoints(int pointsPerUnit, float? minX = null, float? maxX = null)
+    private List<Vector2> CalcPoints(float pointsPerUnit, float? minX = null, float? maxX = null)
     {
         var min = Mathf.Max(minX ?? 0, 0);
         var max = Mathf.Min(maxX ?? width, width);
@@ -63,46 +65,10 @@ public class VoidWaveMesh : MonoBehaviour
         return points;
     }
 
-    private bool[] importantBlocks = null;
 
-    private void UpdateCol()
+    private void UpdateCol(PolygonCollider2D col, float pointsPerUnit)
     {
-
-        var blockCount = Mathf.CeilToInt(width / 1f);
-        if(importantBlocks == null || importantBlocks.Length <= blockCount)
-        {
-            importantBlocks = new bool[blockCount];
-        }
-        Array.Clear(importantBlocks, 0, importantBlocks.Length);
-#if UNITY_EDITOR
-        var importantColliders = FindObjectsOfType<ImportantCollider>();
-#else
-        var importantColliders = ImportantCollider.colliders;
-#endif
-        foreach (var col in importantColliders)
-        {
-            if (col == null) continue;
-            var (min, max) = col.GetRange();
-            var minX = Mathf.Max(0, Mathf.FloorToInt(GetOffsetX(min)));
-            var maxX = Mathf.Min(blockCount - 1, Mathf.CeilToInt(GetOffsetX(max)));
-            if (minX >= maxX) continue;
-            for(int i = minX; i <= maxX; i++)
-            {
-                importantBlocks[i] = true;
-            }
-        }
-        List<Vector2> points = new List<Vector2>();
-        for(int i = 0; i < blockCount;)
-        {
-            int beg = i;
-            bool s = importantBlocks[i++];
-            for(; i < blockCount; i++)
-            {
-                if (importantBlocks[i] != s) break;
-            }
-            points.AddRange(CalcPoints(s ? Mathf.Min(pointsPerUnit, 8) : 1, beg, i));
-        }
-
+        var points = CalcPoints(pointsPerUnit);
         var path = new Vector2[points.Count + 2];
         path[0] = new Vector2(-width / 2f, -depth);
         for (int i = 0; i < points.Count; i++)
@@ -300,7 +266,8 @@ public class VoidWaveMesh : MonoBehaviour
         //Stopwatch stopwatch = new Stopwatch();
         //stopwatch.Start();
         UpdateMesh();
-        UpdateCol();
+        UpdateCol(col, 1);
+        UpdateCol(fallCheckCol, 0.25f);
         //stopwatch.Stop();
         //Debug.Log($"Time({pointsPerUnit}): {stopwatch.Elapsed.TotalSeconds} ({1f / stopwatch.Elapsed.TotalSeconds}fps)");
     }

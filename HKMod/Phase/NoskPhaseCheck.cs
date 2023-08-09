@@ -37,7 +37,7 @@ partial class NoskPhaseCheck : CSFsm<NoskPhaseCheck>
         DefineEvent("CANCEL", nameof(LastIdle));
         yield return StartActionContent;
         var b = mainFsm.col.bounds;
-        if(b.min.y < 9f || HeroControllerR.instance.col2d.bounds.min.y < 9f || !mainFsm.isPhaseLast)
+        if(b.min.y < 8f || HeroControllerR.instance.col2d.bounds.min.y < 8f || !mainFsm.isPhaseLast)
         {
             yield return "CANCEL";
         }
@@ -76,6 +76,8 @@ partial class NoskPhaseCheck : CSFsm<NoskPhaseCheck>
         }
         if (hm.hp < mainFsm.LastPhaseHP && !mainFsm.isPhaseLast)
         {
+            mainFsm.IsTranPhase = true;
+            hm.hp = mainFsm.LastPhaseHP;
             FSMUtility.SendEventToGameObject(pm.gameObject, "INTRO LAST PHASE");
             yield return FsmEvent.Finished;
         }

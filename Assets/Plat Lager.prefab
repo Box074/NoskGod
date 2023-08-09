@@ -656,7 +656,7 @@ GameObject:
   - component: {fileID: 1779788585911114815}
   - component: {fileID: 820053438325846858}
   - component: {fileID: 2616650542044468675}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Quake Checker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -715,7 +715,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d9d5de8d5532a54fa3a7d727fa55bfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 4833869102312788211}
+  renderer: {fileID: 4833869102312788211}
+  mul: 1
 --- !u!1 &8189614722405764985
 GameObject:
   m_ObjectHideFlags: 0

@@ -19,7 +19,20 @@ partial class NoskFsm : CSFsm<NoskFsm>
 
         yield return new WaitForSeconds(1.5f);
 
-        water.GetComponent<AbyssWaterFsm>().raiseUpTo = 10;
+        foreach(var v in FindObjectsOfType<CameraLockAreaR>())
+        {
+            v.cameraYMax += 4;
+        }
+
+        var camCtrl = GameCamerasR.instance.cameraController;
+        var la = camCtrl.currentLockArea;
+        if(la != null)
+        {
+            camCtrl.ReleaseLock(la);
+            camCtrl.LockToArea(la);
+        }
+
+        water.GetComponent<AbyssWaterFsm>().raiseUpTo = 9;
 
         PlayMakerFSM.BroadcastEvent("ABYSS WATER RAISE UP");
 
