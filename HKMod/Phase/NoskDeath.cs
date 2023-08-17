@@ -27,6 +27,16 @@ partial class NoskFsm : CSFsm<NoskFsm>
         hc.StopAnimationControl();
         hc.RelinquishControl();
         hc.AffectedByGravity(false);
+        hc.rb2d.velocity = Vector2.zero;
+       
+        foreach(var v in FindObjectsOfType<DamageHero>())
+        {
+            if(v.gameObject.scene.name == "GG_Nosk")
+            {
+                v.damageDealt = 0;
+                v.hazardType = 1;
+            }
+        }
 
         split.SetActive(true);
         var anim = split.GetComponent<tk2dSpriteAnimator>();
